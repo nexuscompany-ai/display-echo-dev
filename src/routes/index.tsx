@@ -437,39 +437,23 @@ function Problem() {
           </p>
         </div>
 
-        {/* Imagem principal */}
-        <div
-          className="sr mt-14 mx-auto w-full overflow-hidden"
-          style={{
-            maxWidth: "900px",
-            borderRadius: "20px",
-            boxShadow: "0 8px 40px rgb(0 0 0 / 0.08), 0 2px 8px rgb(109 40 217 / 0.10)",
-          }}
-        >
-          {/* Placeholder — substituir pelo <img> ou <Image> real */}
-          <div
-            className="flex w-full flex-col items-center justify-center gap-3"
-            style={{
-              aspectRatio: "16 / 9",
-              background: "linear-gradient(135deg, #F5F3FF 0%, #EDE9FE 60%, #DDD6FE 100%)",
-            }}
-          >
-            <div
-              className="flex h-14 w-14 items-center justify-center rounded-2xl"
-              style={{ background: "linear-gradient(135deg, #6D28D9, #A78BFA)", opacity: 0.35 }}
-            >
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.5" className="h-7 w-7">
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <path d="M3 9h18M9 21V9" />
-              </svg>
-            </div>
-            <span className="text-[13px] font-medium text-[#A78BFA]">&lt;Image Placeholder&gt;</span>
-          </div>
-        </div>
-      </Wrap>
-    </div>
-  );
-}
+       {/* Imagem principal */}
+<div
+  className="sr mt-14 mx-auto w-full overflow-hidden"
+  style={{
+    maxWidth: "1100px",
+    borderRadius: "24px",
+    boxShadow:
+      "0 12px 50px rgb(0 0 0 / 0.08), 0 4px 20px rgb(109 40 217 / 0.15)",
+  }}
+>
+  <img
+    src="/antexdepois.png"
+    alt="Transformação profissional com o Nexus Automation Pack"
+    className="w-full h-auto block"
+    loading="lazy"
+  />
+</div>
 
 /* ── 3. SOLUÇÃO ── */
 function Mechanism() {
