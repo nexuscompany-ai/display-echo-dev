@@ -439,12 +439,12 @@ function Problem() {
           </p>
         </div>
 
-        {/* Imagem principal */}
+        {/* Imagem principal — full-bleed */}
         <div
-          className="sr mt-14 mx-auto w-full overflow-hidden"
+          className="sr mt-14 overflow-hidden"
           style={{
-            maxWidth: "900px",
-            borderRadius: "20px",
+            marginLeft: "calc(50% - 50vw)",
+            marginRight: "calc(50% - 50vw)",
             boxShadow: "0 8px 40px rgb(0 0 0 / 0.08), 0 2px 8px rgb(109 40 217 / 0.10)",
           }}
         >
@@ -570,12 +570,11 @@ function Transformation() {
         </div>
 
         <div
-          className="sr mt-14 mx-auto w-full"
+          className="sr mt-14 overflow-hidden"
           style={{
-            maxWidth: "1200px",
-            borderRadius: "20px",
-            overflow: "hidden",
-            boxShadow: "0 8px 40px rgb(0 0 0 / 0.08), 0 2px 8px rgb(109 40 217 / 0.10), 0 0 0 1px rgb(196 181 253 / 0.25)",
+            marginLeft: "calc(50% - 50vw)",
+            marginRight: "calc(50% - 50vw)",
+            boxShadow: "0 8px 40px rgb(0 0 0 / 0.08), 0 2px 8px rgb(109 40 217 / 0.10)",
           }}
         >
           <img src={antexdepois} alt="Antes e depois — do aprendizado à oportunidade" className="w-full h-auto block" />
@@ -620,12 +619,11 @@ function Transformation() {
         </div>
 
         <div
-          className="sr mt-14 mx-auto w-full"
+          className="sr mt-14 overflow-hidden"
           style={{
-            maxWidth: "1200px",
-            borderRadius: "24px",
-            overflow: "hidden",
-            boxShadow: "0 8px 48px rgb(0 0 0 / 0.07), 0 2px 16px rgb(109 40 217 / 0.08), 0 0 0 1px rgb(196 181 253 / 0.20)",
+            marginLeft: "calc(50% - 50vw)",
+            marginRight: "calc(50% - 50vw)",
+            boxShadow: "0 8px 48px rgb(0 0 0 / 0.07), 0 2px 16px rgb(109 40 217 / 0.08)",
           }}
         >
           <img src={eu} alt="Profissional identificando oportunidades de automação" className="w-full h-auto block" />
