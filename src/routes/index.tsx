@@ -439,23 +439,25 @@ function Problem() {
           </p>
         </div>
 
-       {/* Imagem principal */}
-<div
-  className="sr mt-14 mx-auto w-full overflow-hidden"
-  style={{
-    maxWidth: "1100px",
-    borderRadius: "24px",
-    boxShadow:
-      "0 12px 50px rgb(0 0 0 / 0.08), 0 4px 20px rgb(109 40 217 / 0.15)",
-  }}
->
-  <img
-    src="/antexdepois.png"
-    alt="Transformação profissional com o Nexus Automation Pack"
-    className="w-full h-auto block"
-    loading="lazy"
-  />
-</div>
+        {/* Imagem principal */}
+        <div
+          className="sr mt-14 mx-auto w-full overflow-hidden"
+          style={{
+            maxWidth: "900px",
+            borderRadius: "20px",
+            boxShadow: "0 8px 40px rgb(0 0 0 / 0.08), 0 2px 8px rgb(109 40 217 / 0.10)",
+          }}
+        >
+          <img
+            src={antexdepois}
+            alt="Transformação profissional com o Nexus Automation Pack"
+            className="w-full h-auto block"
+          />
+        </div>
+      </Wrap>
+    </div>
+  );
+}
 
 /* ── 3. SOLUÇÃO ── */
 function Mechanism() {
