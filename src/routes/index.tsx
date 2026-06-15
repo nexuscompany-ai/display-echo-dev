@@ -482,10 +482,6 @@ function Modules() {
   );
 }
 
-function Briefcase({ className }: { className?: string }) {
-  // local fallback (lucide Briefcase exists, but avoid unused warning)
-  return <Award className={className} />;
-}
 
 /* ---------- Gallery ---------- */
 
@@ -494,7 +490,7 @@ function Gallery() {
     { title: "Qualificação de Leads · IA", node: <FlowMini nodes={[Database, Cpu, GitBranch, Rocket]} labels={["Lead", "Score", "Rota", "CRM"]} /> },
     { title: "Cobrança Automática", node: <FlowMini nodes={[Clock, Database, Zap, Check]} labels={["Vencimento", "Status", "Disparo", "Baixa"]} /> },
     { title: "Onboarding de Cliente", node: <FlowMini nodes={[Users, BookOpen, Workflow, Rocket]} labels={["Compra", "Material", "Tarefas", "Sucesso"]} /> },
-    { title: "SDR com IA · WhatsApp", node: <FlowMini nodes={[MessageBubble, Cpu, GitBranch, Rocket]} labels={["Msg", "Intenção", "Rota", "Agenda"]} /> },
+    { title: "SDR com IA · WhatsApp", node: <FlowMini nodes={[MessageSquare, Cpu, GitBranch, Rocket]} labels={["Msg", "Intenção", "Rota", "Agenda"]} /> },
     { title: "Relatórios Comerciais", node: <FlowMini nodes={[Database, Cpu, LineChart, BookOpen]} labels={["Fontes", "Cálculo", "Gráficos", "PDF"]} /> },
     { title: "Sincronia CRM ↔ Planilha", node: <FlowMini nodes={[Database, Workflow, GitBranch, Database]} labels={["CRM", "Map", "Diff", "Sheet"]} /> },
   ];
@@ -530,9 +526,6 @@ function Gallery() {
   );
 }
 
-function MessageBubble({ className }: { className?: string }) {
-  return <Workflow className={className} />;
-}
 
 function FlowMini({ nodes, labels }: { nodes: Array<React.ComponentType<{ className?: string }>>; labels: string[] }) {
   return (
