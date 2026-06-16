@@ -648,15 +648,15 @@ function Authority() {
     {
       n: "10",
       title: "Automações explicadas",
-      desc: "Cada automação apresenta o problema, a lógica do processo e possíveis aplicações.",
+      desc: "Cada automação apresenta o problema, a lógica e uma aplicação prática.",
     },
     {
       title: "Visão comercial",
-      desc: "O foco não está apenas na ferramenta, mas em como identificar oportunidades e entender onde cada solução pode gerar valor.",
+      desc: "O foco não está apenas na ferramenta, mas em entender onde cada solução pode gerar valor.",
     },
     {
       title: "Aprendizado simplificado",
-      desc: "Fluxogramas, explicações visuais e estrutura organizada para facilitar a compreensão.",
+      desc: "Fluxogramas visuais, explicações organizadas e entendimento mais rápido dos processos.",
     },
   ];
 
@@ -678,7 +678,7 @@ function Authority() {
             Por trás do material existe uma visão prática de mercado.
           </h2>
           <p className="mt-4 text-base leading-relaxed text-[#6B7280]">
-            O Nexus Automation Pack foi criado para ajudar profissionais que já estudam automação, IA e ferramentas modernas a entender quais soluções possuem potencial comercial e como enxergar oportunidades reais de aplicação.
+            O Nexus Automation Pack foi criado para ajudar profissionais que estudam automação a entender onde existem aplicações reais e oportunidades de mercado.
           </p>
         </div>
 
@@ -725,7 +725,7 @@ function Authority() {
             Enquanto muitas pessoas aprendem ferramentas isoladas, poucas desenvolvem a capacidade de identificar aplicações reais.
           </p>
           <p className="mt-4 text-base leading-relaxed text-[#374151]">
-            O objetivo do Nexus Automation Pack é ajudar a encurtar essa jornada através de exemplos visuais, lógica de funcionamento e contexto comercial.
+            O objetivo do Nexus Automation Pack é encurtar essa jornada através de exemplos visuais, lógica de funcionamento e contexto de mercado.
           </p>
         </div>
       </Wrap>
