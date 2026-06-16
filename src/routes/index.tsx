@@ -642,6 +642,113 @@ function Transformation() {
   );
 }
 
+/* ── 5.5 AUTORIDADE / SOBRE A NEXUS ── */
+function Authority() {
+  const cards = [
+    {
+      n: "10",
+      title: "Automações explicadas",
+      body: "Cada automação apresenta o problema, a lógica do processo e possíveis aplicações.",
+    },
+    {
+      n: "02",
+      title: "Visão comercial",
+      body: "O foco não está apenas na ferramenta, mas em como identificar oportunidades e entender onde cada solução pode gerar valor.",
+    },
+    {
+      n: "03",
+      title: "Aprendizado simplificado",
+      body: "Fluxogramas, explicações visuais e estrutura organizada para facilitar a compreensão.",
+    },
+  ];
+
+  return (
+    <section id="sobre" className="bg-white">
+      <div className="mx-auto max-w-6xl px-4 py-20 md:py-28">
+        {/* Cabeçalho */}
+        <div className="sr mx-auto max-w-2xl text-center">
+          <span
+            className="inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em]"
+            style={{
+              background: "linear-gradient(135deg,#F5F3FF,#EDE9FE)",
+              borderColor: "#DDD6FE",
+              color: "#6D28D9",
+            }}
+          >
+            Sobre a Nexus
+          </span>
+          <h2
+            className="mt-5 font-extrabold tracking-tight text-[#0F172A]"
+            style={{ fontSize: "clamp(1.75rem,3.5vw,2.5rem)", lineHeight: 1.15 }}
+          >
+            Por trás do material existe uma visão prática de mercado.
+          </h2>
+          <p className="mt-5 text-[17px] leading-relaxed text-[#475569]">
+            O Nexus Automation Pack foi criado para ajudar profissionais que já estudam automação, IA e ferramentas modernas a entender quais soluções possuem potencial comercial e como enxergar oportunidades reais de aplicação.
+          </p>
+        </div>
+
+        {/* Grid 2 colunas */}
+        <div className="mt-14 grid items-center gap-10 md:grid-cols-2 md:gap-14">
+          {/* Coluna esquerda — imagem */}
+          <div className="sr flex justify-center">
+            <img
+              src={semfundo}
+              alt="Nexus Automation"
+              className="w-full max-w-[460px] object-contain"
+            />
+          </div>
+
+          {/* Coluna direita — cards */}
+          <div className="sr sr-premium-notifications space-y-4">
+            {cards.map((c) => (
+              <div
+                key={c.title}
+                className="rounded-2xl border bg-[#F8FAFC] p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(109,40,217,0.10)]"
+                style={{ borderColor: "#E2E8F0" }}
+              >
+                <div className="flex items-start gap-5">
+                  <div
+                    className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl text-xl font-black text-white"
+                    style={{
+                      background: "linear-gradient(135deg,#6D28D9,#7C3AED)",
+                      boxShadow: "0 8px 24px rgba(109,40,217,0.25)",
+                    }}
+                  >
+                    {c.n}
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-[#0F172A]">{c.title}</h3>
+                    <p className="mt-2 text-[15px] leading-relaxed text-[#475569]">
+                      {c.body}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Bloco final */}
+        <div
+          className="sr mx-auto mt-14 max-w-3xl rounded-2xl border p-8 text-center"
+          style={{
+            background: "linear-gradient(135deg,#FAFAFA,#F5F3FF)",
+            borderColor: "#E2E8F0",
+          }}
+        >
+          <p className="text-[16px] leading-relaxed text-[#334155]">
+            Enquanto muitas pessoas aprendem ferramentas isoladas, poucas desenvolvem a capacidade de identificar aplicações reais.
+          </p>
+          <p className="mt-4 text-[16px] leading-relaxed text-[#334155]">
+            O objetivo do Nexus Automation Pack é ajudar a encurtar essa jornada através de exemplos visuais, lógica de funcionamento e contexto comercial.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ── 6. O QUE VOCÊ REALMENTE RECEBE ── */
 function ContentValue() {
   const blocks = [
