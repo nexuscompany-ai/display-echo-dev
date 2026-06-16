@@ -1106,6 +1106,7 @@ function Landing() {
       <Mechanism />
       <Modules />
       <Transformation />
+      <Authority />
       <ContentValue />
       <Offer />
       <FAQ />
