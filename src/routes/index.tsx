@@ -8,7 +8,8 @@ import modulo2 from "@/assets/modulo2.png";
 import modulo1 from "@/assets/modulo1.png";
 import antexdepois from "@/assets/antexdepois.png";
 import eu from "@/assets/eu.png";
-import semfundo from "@/assets/semfundo.png";
+import semfundoAsset from "@/assets/semfundo.png.asset.json";
+const semfundo = semfundoAsset.url;
 import { ArrowRight, Check, ChevronDown, ShieldCheck, MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 
