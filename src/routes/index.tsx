@@ -685,8 +685,7 @@ function Authority() {
         <div className="mt-16 grid items-center gap-10 lg:grid-cols-2">
           {/* Coluna esquerda: imagem */}
           <div className="sr flex justify-center">
-            <img
-              src={semfundo}
+        
               alt="Nexus Automation Pack"
               className="w-full max-w-md object-contain"
               loading="lazy"
