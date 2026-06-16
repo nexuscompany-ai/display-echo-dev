@@ -4,6 +4,8 @@ import imag1 from "@/assets/imag1.png";
 import imag2 from "@/assets/imag2.png";
 import mag3 from "@/assets/mag3.png";
 import modulo3 from "@/assets/modulo3.png";
+import modulo2 from "@/assets/modulo2.png";
+import modulo1 from "@/assets/modulo1.png";
 import antexdepois from "@/assets/antexdepois.png";
 import eu from "@/assets/eu.png";
 import { ArrowRight, Check, ChevronDown, ShieldCheck } from "lucide-react";
@@ -134,7 +136,7 @@ function Btn({ children, href = CTA_URL, lg = false }: { children: React.ReactNo
       href={href}
       className={`group relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-lg font-bold text-white transition-all duration-200 hover:-translate-y-px ${size}`}
       style={{
-        background: "linear-gradient(135deg, #6D28D9 0%, #7C3AED 100%)",
+        background: "linear-gradient(135deg, #6D28D9 0%, #9333EA 100%)",
         boxShadow: "0 2px 8px rgb(109 40 217 / 0.35), 0 1px 3px rgb(109 40 217 / 0.20), inset 0 1px 0 rgb(255 255 255 / 0.12)",
       }}
     >
@@ -199,7 +201,7 @@ function ProductMockup() {
         {/* Pill +50 */}
         <div
           className="absolute right-3.5 top-3.5 rounded-full px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-white"
-          style={{ background: "linear-gradient(135deg, #6D28D9, #7C3AED)", boxShadow: "0 2px 8px rgb(109 40 217 / 0.40)" }}
+          style={{ background: "linear-gradient(135deg, #6D28D9, #9333EA)", boxShadow: "0 2px 8px rgb(109 40 217 / 0.40)" }}
         >
           +50 automações
         </div>
@@ -379,7 +381,7 @@ function Hero() {
             href={CTA_URL}
             className="group relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-xl px-10 py-4 text-[1rem] font-bold text-white transition-all duration-200 hover:-translate-y-px"
             style={{
-              background: "linear-gradient(135deg, #6D28D9 0%, #8B5CF6 100%)",
+              background: "linear-gradient(135deg, #6D28D9 0%, #9333EA 100%)",
               boxShadow: "0 2px 8px rgb(109 40 217 / 0.40), 0 8px 24px rgb(109 40 217 / 0.22), inset 0 1px 0 rgb(255 255 255 / 0.14)",
             }}
             onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.boxShadow = "0 4px 16px rgb(109 40 217 / 0.55), 0 12px 32px rgb(109 40 217 / 0.30), inset 0 1px 0 rgb(255 255 255 / 0.14)"; }}
@@ -439,22 +441,6 @@ function Problem() {
             continuará preso na fase do aprendizado.
           </p>
         </div>
-
-        {/* Imagem principal — full-bleed */}
-        <div
-          className="sr mt-14 overflow-hidden"
-          style={{
-            marginLeft: "calc(50% - 50vw)",
-            marginRight: "calc(50% - 50vw)",
-            boxShadow: "0 8px 40px rgb(0 0 0 / 0.08), 0 2px 8px rgb(109 40 217 / 0.10)",
-          }}
-        >
-          <img
-            src={antexdepois}
-            alt="Transformação profissional com o Nexus Automation Pack"
-            className="w-full h-auto block"
-          />
-        </div>
       </Wrap>
     </div>
   );
@@ -504,8 +490,8 @@ function Mechanism() {
 /* ── 4. MÓDULOS ── */
 function Modules() {
   const mods = [
-    { n: "01", tag: "Visão comercial",     title: "Entenda a automação",           desc: "Visualize o problema que cada solução resolve. Compreenda a lógica por trás do processo. Entenda o fluxo completo — antes de apresentar para qualquer cliente.", img: imag1 },
-    { n: "02", tag: "Potencial de mercado", title: "Descubra o potencial comercial",  desc: "Veja como a solução pode ser apresentada para empresas. Entenda onde existe demanda real e como transformar conhecimento em uma oferta concreta.",             img: imag2 },
+    { n: "01", tag: "Visão comercial",     title: "Entenda a automação",           desc: "Visualize o problema que cada solução resolve. Compreenda a lógica por trás do processo. Entenda o fluxo completo — antes de apresentar para qualquer cliente.", img: modulo1 },
+    { n: "02", tag: "Potencial de mercado", title: "Descubra o potencial comercial",  desc: "Veja como a solução pode ser apresentada para empresas. Entenda onde existe demanda real e como transformar conhecimento em uma oferta concreta.",             img: modulo2 },
     { n: "03", tag: "Oportunidades reais",  title: "Saiba quem compra",              desc: "Descubra quais nichos têm interesse naquilo que você sabe fazer. Identifique oportunidades que normalmente passam despercebidas.",                          img: modulo3 },
   ];
   return (
@@ -549,110 +535,114 @@ function Modules() {
 /* ── 5. TRANSFORMAÇÃO ── */
 function Transformation() {
   return (
-    <div id="transformacao" className="bg-white">
+    <section id="transformacao" className="bg-transparent">
+      <div className="sr sr-premium-notifications mx-auto grid max-w-[700px] gap-6 px-4 py-8">
 
-      {/* ── BLOCO 1: antexdepois ── */}
-      <Wrap>
-        <div className="sr mx-auto max-w-2xl text-center">
-          <span
-            className="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em]"
-            style={{ borderColor: "#C4B5FD", color: "#6D28D9", background: "#F5F3FF" }}
-          >
-            <span className="h-1.5 w-1.5 rounded-full bg-[#6D28D9]" />
-            Transformação
-          </span>
-          <h2
-            className="mt-5"
-            style={{ fontSize: "clamp(1.9rem,4vw,3rem)", fontWeight: 800, lineHeight: 1.05, letterSpacing: "-0.03em", color: "#111827" }}
-          >
-            Pare de estudar sem direção.
-          </h2>
-          <p className="mt-5 text-[1.0625rem] leading-relaxed text-[#6B7280]">
-            A maioria aprende ferramentas.<br className="hidden sm:block" />
-            Poucos descobrem quais soluções empresas realmente compram.
-          </p>
-        </div>
+        <div className="mx-auto mt-8 mb-16 max-w-xl space-y-5">
+
+  {/* CARD 1 */}
+  <div
+    className="rounded-[28px] border p-5"
+    style={{
+      background: "#111827",
+      borderColor: "#1F2937",
+      boxShadow: "0 12px 40px rgba(0,0,0,0.15)",
+    }}
+  >
+    <div className="flex items-center justify-between">
+
+      <div className="flex items-center gap-3">
 
         <div
-          className="sr mt-14 overflow-hidden"
-          style={{
-            marginLeft: "calc(50% - 50vw)",
-            marginRight: "calc(50% - 50vw)",
-            boxShadow: "0 8px 40px rgb(0 0 0 / 0.08), 0 2px 8px rgb(109 40 217 / 0.10)",
-          }}
+          className="flex h-11 w-11 items-center justify-center rounded-full text-white font-bold"
+          style={{ background: "#22C55E" }}
         >
-          <img src={antexdepois} alt="Antes e depois — do aprendizado à oportunidade" className="w-full h-auto block" />
+          $
         </div>
-      </Wrap>
 
-      {/* ── TRANSIÇÃO ── */}
-      <div className="sr mx-auto max-w-2xl px-6 pb-10 pt-2 text-center">
-        <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#6D28D9]">Visão comercial</p>
-        <h3
-          className="mt-4"
-          style={{ fontSize: "clamp(1.5rem,3vw,2.25rem)", fontWeight: 700, lineHeight: 1.1, letterSpacing: "-0.025em", color: "#111827" }}
-        >
-          Quando você entende o que vender, tudo muda.
-        </h3>
-        <p className="mt-4 text-[1.0625rem] leading-relaxed text-[#6B7280]">
-          O mercado não recompensa quem conhece mais ferramentas.<br className="hidden sm:block" />
-          O mercado recompensa quem resolve problemas e entrega resultados.
-        </p>
+        <div>
+          <div className="text-xs font-bold uppercase tracking-wider text-white/50">
+            Nexus Pay
+          </div>
+
+          <div className="text-lg font-bold text-white">
+            Atividade registrada
+          </div>
+        </div>
       </div>
 
-      {/* ── BLOCO 2: eu ── */}
-      <Wrap className="!pt-0">
-        <div className="sr mx-auto max-w-2xl text-center">
-          <span
-            className="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em]"
-            style={{ borderColor: "#C4B5FD", color: "#6D28D9", background: "#F5F3FF" }}
-          >
-            <span className="h-1.5 w-1.5 rounded-full bg-[#6D28D9]" />
-            O resultado
-          </span>
-          <h2
-            className="mt-5"
-            style={{ fontSize: "clamp(1.9rem,4vw,3rem)", fontWeight: 800, lineHeight: 1.05, letterSpacing: "-0.03em", color: "#111827" }}
-          >
-            Imagine ser você.
-          </h2>
-          <p className="mt-5 text-[1.0625rem] leading-relaxed text-[#6B7280]">
-            Identificando oportunidades. Conversando com empresas.<br className="hidden sm:block" />
-            Fechando projetos. Transformando conhecimento em renda.
-          </p>
-        </div>
+      <div className="text-xs text-white/40">
+        agora
+      </div>
+    </div>
+
+    <p className="mt-4 text-white/70 leading-relaxed">
+      Nova movimentação associada a uma operação comercial.
+    </p>
+
+    <div
+      className="mt-5 text-[48px] font-black"
+      style={{ color: "#22C55E" }}
+    >
+      R$ 2.000
+    </div>
+  </div>
+
+  {/* CARD 2 */}
+  <div
+    className="rounded-[28px] border p-5"
+    style={{
+      background: "#111827",
+      borderColor: "#1F2937",
+      boxShadow: "0 12px 40px rgba(0,0,0,0.15)",
+    }}
+  >
+    <div className="flex items-center justify-between">
+
+      <div className="flex items-center gap-3">
 
         <div
-          className="sr mt-14 overflow-hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-full text-white font-bold"
           style={{
-            marginLeft: "calc(50% - 50vw)",
-            marginRight: "calc(50% - 50vw)",
-            boxShadow: "0 8px 48px rgb(0 0 0 / 0.07), 0 2px 16px rgb(109 40 217 / 0.08)",
+            background:
+              "linear-gradient(135deg,#9333EA,#A855F7)",
           }}
         >
-          <img src={eu} alt="Profissional identificando oportunidades de automação" className="w-full h-auto block" />
+          ✓
         </div>
 
-        {/* Indicadores */}
-        <div className="sr mt-12 flex flex-col items-center gap-5 sm:flex-row sm:justify-center sm:gap-12">
-          {[
-            "Mais clareza sobre o que vender",
-            "Mais confiança para apresentar soluções",
-            "Mais oportunidades de faturamento",
-          ].map((label: string) => (
-            <span key={label} className="flex items-center gap-2.5 text-[15px] font-medium text-[#374151]">
-              <span
-                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[10px] font-bold text-white"
-                style={{ background: "linear-gradient(135deg, #6D28D9, #A78BFA)" }}
-              >
-                ✓
-              </span>
-              {label}
-            </span>
-          ))}
+        <div>
+          <div className="text-xs font-bold uppercase tracking-wider text-white/50">
+            Nexus CRM
+          </div>
+
+          <div className="text-lg font-bold text-white">
+            Projeto aprovado
+          </div>
         </div>
-      </Wrap>
+      </div>
+
+      <div className="text-xs text-white/40">
+        agora
+      </div>
     </div>
+
+    <p className="mt-4 text-white/70 leading-relaxed">
+      Uma nova oportunidade avançou para a próxima etapa.
+    </p>
+
+    <div
+      className="mt-5 text-[48px] font-black"
+      style={{ color: "#22C55E" }}
+    >
+      R$ 4.850
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </section>
   );
 }
 
@@ -665,7 +655,7 @@ function ContentValue() {
       title: "Visualize o problema. Compreenda a lógica. Entenda o fluxo completo.",
       body: "Cada automação vem com o problema que resolve, a lógica por trás do processo e o fluxo completo explicado visualmente — para que você entenda antes de apresentar para qualquer cliente.",
       items: ["O problema que a solução resolve", "Como funciona na prática", "Fluxo completo passo a passo", "A lógica por trás do processo"],
-      img: imag1,
+      img: modulo1,
       accent: "#6D28D9",
     },
     {
@@ -674,7 +664,7 @@ function ContentValue() {
       title: "Descubra como a solução pode se transformar em uma oferta real.",
       body: "Veja como a automação pode ser apresentada para empresas, onde existe demanda e como estruturar uma oferta concreta — sem depender de tentativa e erro.",
       items: ["Como posicionar a solução", "Como apresentar ao cliente", "Onde existe demanda real", "Como transformar em serviço"],
-      img: imag2,
+      img: modulo2,
       accent: "#7C3AED",
     },
     {
@@ -820,7 +810,7 @@ function Offer() {
           <div className="sr rounded-2xl border border-[#E5E7EB] bg-white p-8 shadow-[0_1px_4px_rgb(0_0_0/0.04)]">
             <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#9CA3AF]">O que está incluso</p>
             <div className="grid grid-cols-3 gap-3">
-              {[imag1, imag2, mag3].map((src, i) => (
+              {[modulo1, modulo2, modulo3].map((src, i) => (
                 <div key={i} className="overflow-hidden rounded-xl border border-[#E5E7EB] shadow-sm">
                   <img src={src} alt="" className="w-full object-cover" style={{ height: "110px" }} />
                 </div>
@@ -936,7 +926,7 @@ function FinalCTA() {
     <div className="relative overflow-hidden" style={{ background: "linear-gradient(135deg, #4C1D95 0%, #6D28D9 50%, #7C3AED 100%)" }}>
       <div className="pointer-events-none absolute inset-0" style={{ background: "radial-gradient(ellipse 60% 70% at 80% 50%, rgb(167 139 250 / 0.15), transparent 70%)" }} />
       <div className="pointer-events-none absolute inset-0" style={{ backgroundImage: "linear-gradient(rgb(255 255 255 / 0.04) 1px, transparent 1px), linear-gradient(to right, rgb(255 255 255 / 0.04) 1px, transparent 1px)", backgroundSize: "64px 64px" }} />
-      <Wrap className="!py-24 md:!py-32 text-center relative">
+      <Wrap className="!py-12 md:!py-12 text-center relative">
         <div className="sr mx-auto max-w-2xl">
           <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#C4B5FD]">
             <span className="h-px w-5 bg-[#A78BFA] rounded-full" />
