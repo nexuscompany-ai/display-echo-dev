@@ -8,6 +8,7 @@ import modulo2 from "@/assets/modulo2.png";
 import modulo1 from "@/assets/modulo1.png";
 import antexdepois from "@/assets/antexdepois.png";
 import eu from "@/assets/eu.png";
+import semfundo from "@/assets/semfundo.png";
 import { ArrowRight, Check, ChevronDown, ShieldCheck, MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -945,6 +946,9 @@ function FinalCTA() {
             </a>
           </div>
         </div>
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 hidden lg:block opacity-20">
+          <img src={semfundo} alt="Nexus" className="h-32 w-32 object-contain" />
+        </div>
       </Wrap>
     </div>
   );
@@ -956,7 +960,7 @@ function Footer() {
     <footer className="border-t border-[#E5E7EB] bg-white">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-6 py-8 md:flex-row">
         <div className="flex items-center gap-2">
-          <img src={logoAsset.url} alt="Nexus" className="h-5 w-5 opacity-70" />
+          <img src={semfundo} alt="Nexus" className="h-5 w-5 opacity-70" />
           <span className="text-xs font-medium text-[#9CA3AF]">Nexus Automation Pack</span>
         </div>
         <span className="text-xs text-[#D1D5DB]">© {new Date().getFullYear()} Nexus. Todos os direitos reservados.</span>
