@@ -871,6 +871,31 @@ function ContentValue() {
   );
 }
 
+/* ── OFFER ── */
+function Offer() {
+  return null;
+}
+
+/* ── FAQ ── */
+function FAQ() {
+  return null;
+}
+
+/* ── FINAL CTA ── */
+function FinalCTA() {
+  return null;
+}
+
+/* ── FOOTER ── */
+function Footer() {
+  return null;
+}
+
+/* ── WHATSAPP BUTTON ── */
+function WhatsAppButton() {
+  return null;
+}
+
 /* ── PAGE ── */
 function Landing() {
   useScrollReveal();
