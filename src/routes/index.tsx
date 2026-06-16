@@ -989,6 +989,98 @@ function WhatsAppButton() {
   );
 }
 
+/* ── AUTORIDADE ── */
+function Authority() {
+  const cards = [
+    {
+      n: "10",
+      title: "Automações explicadas",
+      desc: "Cada automação apresenta o problema, a lógica do processo e possíveis aplicações.",
+    },
+    {
+      title: "Visão comercial",
+      desc: "O foco não está apenas na ferramenta, mas em como identificar oportunidades e entender onde cada solução pode gerar valor.",
+    },
+    {
+      title: "Aprendizado simplificado",
+      desc: "Fluxogramas, explicações visuais e estrutura organizada para facilitar a compreensão.",
+    },
+  ];
+
+  return (
+    <section id="autoridade" className="bg-white">
+      <Wrap>
+        <div className="sr mx-auto max-w-2xl text-center">
+          <Eyebrow>Sobre a Nexus</Eyebrow>
+          <h2
+            className="mt-4"
+            style={{
+              fontSize: "clamp(1.75rem,3.5vw,2.5rem)",
+              fontWeight: 700,
+              lineHeight: 1.1,
+              letterSpacing: "-0.025em",
+              color: "#111827",
+            }}
+          >
+            Por trás do material existe uma visão prática de mercado.
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-[#6B7280]">
+            O Nexus Automation Pack foi criado para ajudar profissionais que já estudam automação, IA e ferramentas modernas a entender quais soluções possuem potencial comercial e como enxergar oportunidades reais de aplicação.
+          </p>
+        </div>
+
+        <div className="mt-16 grid items-center gap-10 lg:grid-cols-2">
+          {/* Coluna esquerda: imagem */}
+          <div className="sr flex justify-center">
+            <img
+              src={semfundo}
+              alt="Nexus Automation Pack"
+              className="w-full max-w-md object-contain"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Coluna direita: cards */}
+          <div className="space-y-5">
+            {cards.map(({ n, title, desc }, i) => (
+              <div
+                key={title}
+                className={`sr sr-delay-${i + 1} rounded-2xl border border-[#E5E7EB] bg-[#F8FAFC] p-6 transition-all duration-300 hover:border-[#C4B5FD] hover:shadow-[0_12px_40px_rgb(109_40_217/0.08)]`}
+              >
+                <div className="flex items-start gap-4">
+                  {n && (
+                    <div
+                      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-lg font-bold text-white"
+                      style={{ background: "linear-gradient(135deg,#6D28D9,#7C3AED)" }}
+                    >
+                      {n}
+                    </div>
+                  )}
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-[#111827]">{title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-[#6B7280]">{desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Bloco final */}
+        <div className="sr mx-auto mt-14 max-w-3xl rounded-2xl border border-[#E5E7EB] bg-white p-8 text-center">
+          <p className="text-base leading-relaxed text-[#374151]">
+            Enquanto muitas pessoas aprendem ferramentas isoladas, poucas desenvolvem a capacidade de identificar aplicações reais.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-[#374151]">
+            O objetivo do Nexus Automation Pack é ajudar a encurtar essa jornada através de exemplos visuais, lógica de funcionamento e contexto comercial.
+          </p>
+        </div>
+      </Wrap>
+    </section>
+  );
+}
+
+
 /* ── PAGE ── */
 function Landing() {
   useScrollReveal();
